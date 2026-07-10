@@ -1,5 +1,7 @@
-//to make executable, run
-//"c:\Users\mrspo\Coding Projects\Coding_SHARP" cg++ -x c++ "MEP_SHAHNIM" -o "MEP_SHAHNIM.exe"
+//Author: PharaohAtemu (github username)
+/*
+Purpose: To analyze the first n p and n-positions for the game Shah-Nim. 
+*/
 
 
 #include <iostream>
