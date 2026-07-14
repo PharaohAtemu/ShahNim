@@ -3,7 +3,7 @@ C++ programs to aid in research paper on the characteristics of Shah Nim. Shah N
 
 ShahNim_1pile.cpp uses n-1 and the factors of n to decide if n is a N-position (next player wins) or P-position (previous player wins). User can specify normal play (first player left with one stone loses) or misere (first player left with one stone wins), and number of stones. Assumes user will input correct variable type. Possible fix in later renditions.
 
-Program ShahNim_Grundy.cpp uses the P-position numbers to build a vector of n Grundy numbers. The Grundy number for any game n depends on the mex (minimum excluded value) of the Grundy numbers in its position set. EXCEPT! all P-position numbers have a Grundy value of 0. User can specify number of stones. Important to note that grundy numbers will not work with multiple pile misere, so future renditions cannot include that. 
+Program ShahNim_Grundy.cpp uses the P-position numbers to build a vector of n Grundy numbers. The Grundy number for any game n depends on the mex (minimum excluded value) of the Grundy numbers in its position set. User can specify number of piles, and stones in each pile. User can search for a grundy value within the max of all the piles. Program tells user who will win and max grundy value. Code is not opitmized and assumed correct variable input. Possible fix in later renditions. Important to note that grundy numbers will not work with multiple pile misere, so future renditions cannot include that. 
 
 Program divisor_position.cpp houses the function to return all divisors of a number and the function to calculate if a number is a N- or P- position. 
 
