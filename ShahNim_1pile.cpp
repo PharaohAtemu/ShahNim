@@ -6,11 +6,25 @@
 int main(){
 
     int MAX = 0;
+    int normal = 0;
+    vector<int> n_position;
+    vector<int> p_position;
+
+    while(normal != 1 && normal != 2){
+        cout<<"Choose 1 for normal play, 2 for misere: ";
+        cin>> normal;
+    }
+
     cout<<"Enter number of stones: ";
     cin>> MAX;
 
-    vector<int> n_position = {2};
-    vector<int> p_position = {1,3};
+    if(normal == 1){
+        n_position.push_back(2);
+        p_position.push_back(3);
+    }else{
+        n_position.push_back(3);
+        p_position.push_back(2);
+    }
 
     for(int i = 4; i <= MAX; i++)
     {
