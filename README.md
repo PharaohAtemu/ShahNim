@@ -5,6 +5,8 @@ ShahNim_1pile.cpp uses n-1 and the factors of n to decide if n is a N-position (
 
 Program ShahNim_Grundy.cpp uses the P-position numbers to build a vector of n Grundy numbers. The Grundy number for any game n depends on the mex (minimum excluded value) of the Grundy numbers in its position set. User can specify number of piles, and stones in each pile. User can search for a grundy value within the max of all the piles. Program tells user who will win and max grundy value. Code is not opitmized and assumed correct variable input. Possible fix in later renditions. Important to note that grundy numbers will not work with multiple pile misere, so future renditions cannot include that. 
 
+Program Grundy_pattern.cpp uses a 2D vector to sort numbers up to n (user input) by their grundy value. Used to try and find patterns of grundy values.
+
 Program divisor_position.cpp houses the function to return all divisors of a number and the function to calculate if a number is a N- or P- position. 
 
 ## How to Use
