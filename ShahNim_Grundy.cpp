@@ -52,17 +52,19 @@ void findMex(int n){
 
     int mex = 1; //no p posiitons, so mex starts at 1
 
-    for (int i = 0; i < set.size(); i++){
+    for (int i = 0; i < grundySet.size(); i++){
         if(grundySet[i] == mex){ 
             mex++;
         }
     }
+
 
     if(mex > MAX_GRUNDY){
         MAX_GRUNDY = mex;
     }
 
     grundy.push_back(mex);
+
     return;
 }
 
@@ -94,12 +96,13 @@ int main(){
         findMex(i);
     }
 
+
     if(piles > 1){
         if(mulitple(game) != 0)
         {
             cout<< "First player wins this game.\n";
         }else{
-            cout<<"Second player wins this game.\n";
+            cout<< "Second player wins this game.\n";
         }
     }
 
@@ -112,9 +115,13 @@ int main(){
         }while(search > MAX);
 
         if(search == -1){
-            for(int i = 0; i < MAX-2; i++){
-                cout<<grundy[i]<<" "<<grundy[i+1]<<" "<<grundy[i+2]<<"\n";
+            for(int i = 1; i < grundy.size(); i++ ){
+                cout<<grundy[i-1]<<" ";
+                if(i%5 == 0){
+                    cout<<"\n";
+                }
             }
+            cout<<"\n";
         }else{
             cout<<grundy[search]<<"\n";
         }

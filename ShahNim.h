@@ -1,6 +1,6 @@
 #ifndef SHAHNIM_H
 
-#define SHAHNIM_h
+#define SHAHNIM_H
 
 #include <vector>
 #include <algorithm>
