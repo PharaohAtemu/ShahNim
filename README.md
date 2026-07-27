@@ -1,5 +1,5 @@
 # ShahNim
-C++ programs to aid in research paper on the characteristics of Shah Nim. Shah Nim is a class of Nim games where the players options consist of 1) Taking one stone, or 2) Leaving a proper divisor of the original pile greater than one and less than itself. For purpose of further explaination, a position set is a set Q(n) where all possible next states are elements of Q. For example, 8 has a position set Q = {2,4,7}.
+C++ programs to aid in research paper on the characteristics of Shah Nim. Shah Nim is a class of Nim games where the players options consist of 1) Taking one stone, or 2) Leaving a proper divisor of the original pile greater than one. For purpose of further explanation, a position set is a set Q(n) where all possible next states are elements of Q. For example, 8 has a position set Q = {2,4,7}.
 
 ShahNim_1pile.cpp uses n-1 and the factors of n to decide if n is a N-position (next player wins) or P-position (previous player wins). User can specify normal play (first player left with one stone loses) or misere (first player left with one stone wins), and number of stones. Assumes user will input correct variable type. Possible fix in later renditions.
 
@@ -14,4 +14,5 @@ Program divisor_position.cpp houses the function to return all divisors of a num
 * Download ShahNim_1pile.cpp, divisor_position.cpp, ShahNim.h, & ShahNim_Grundy.cpp
 * compile "g++ ShahNim_1pile.cpp divisor_position.cpp -o [outputname]" (for n_position, p_position)
 * compile "g++ ShahNim_Grundy.cpp divisor_position.cpp -o [outputname]" (for grundy numbers)
+* compile "g++ Grundy_pattern.cpp divisor_position.cpp -o [outputname]" (for numbers split into grundy values)
 * .\[outputname]
